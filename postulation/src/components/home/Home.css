@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+
+.div-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 500px;
+    background-color: transparent; 
+    border-radius: 50px;
+    gap: 40px;
+    padding: 50px 40px;
+    color: white; 
+}
+
+.buttons-home{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.text-home {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.slogan-home {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #B5B5B5;
+    margin-bottom: 20px;
+}
+
+.button-home {
+    background: #E6FC15;
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none; 
+}
+
+.button-home:hover {
+    background: #d4e213;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .div-home {
+        width: 450px;
+        height: auto;
+        padding: 50px 40px;
+    }
+
+    .logo-home {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-home {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .slogan-home {
+        font-size: 16px;
+    }
+
+    .button-home {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .div-home {
+        width: 300px;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .logo-home {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-home {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .slogan-home {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .button-home {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .div-home {
+        width: 300px;
+        height: auto;
+        padding: 30px 10px;
+        gap: 25px;
+    }
+
+    .logo-home {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-home {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slogan-home {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .button-home {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+}

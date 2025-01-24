@@ -1,0 +1,187 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.div-subscribe {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px; 
+    height: 400px;
+    /* 
+    Aclaracion de medidas:
+
+    No use las que estan comentadas (las del proyecto) ya que en mi pantalla se veia 
+    demasiado grande el div padre que contenia todo, asique opte por esa medida que deje ahi,
+    pero se puede cambiar.
+    
+     */
+    /*
+    width: 841px; 
+    height: 505.86px;
+    */
+    gap: 66px; 
+    padding: 70px 178px; 
+    border-radius: 50px; 
+}
+
+
+.logo-subscribe{
+    width: 58.43px;
+    height: 54.86px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.text-subscribe{
+    font-family: 'Inter', sans-serif; 
+    width: 182px;
+    height: 39;
+    gap: 10;
+}
+
+.input-subscribe {
+    border: none; 
+    border-bottom: 2px solid #000; 
+    outline: none;
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
+    font-size: 16px; 
+    padding: 10px 0; 
+    margin: 0 auto; 
+    transition: border-color 0.2s; 
+}
+
+.input-subscribe:focus {
+    border-bottom: 2px solid #E6FC15;
+}
+
+.button-subscribe {
+    background: #E6FC15; 
+    width: 205px; 
+    height: 39px; 
+    border-radius: 50px; 
+    padding: 14px 74px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    border: none;
+    cursor: pointer; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+    font-weight: bold; 
+    color: #000; 
+    transition: all 0.3s ease; 
+}
+
+.button-subscribe:hover {
+    background: #d4e213; 
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .div-subscribe {
+        width: 450px;
+        height: auto;
+        padding: 50px 40px;
+        gap: 40px;
+    }
+
+    .logo-subscribe {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-subscribe {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .input-subscribe {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .button-subscribe {
+        width: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .div-subscribe {
+        width: 300px;
+        height: 400px;
+        top: 267px;
+        left: 33px;
+        padding: 40px 20px;
+        gap: 30px;
+        border-radius: 50px;
+    }
+
+    .logo-subscribe {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-subscribe {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .input-subscribe {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+    }
+
+    .button-subscribe {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .div-subscribe {
+        width: 300px;
+        height: auto;
+        padding: 30px 10px;
+        gap: 25px;
+    }
+
+    .logo-subscribe {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-subscribe {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .input-subscribe {
+        width: 100%;
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .button-subscribe {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+}
